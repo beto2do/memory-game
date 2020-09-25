@@ -1,13 +1,11 @@
 import React from 'react';
+import './card.css'
 
 function Card(props) {
     const src = props.isToggleOn ? props.imgFrontSrc: props.imgBackSrc;
     return (
         <div className="memory-card">
-            <img src={src} className="card-img" alt={props.title}/>
-            <div className="overlay">
-                <h5 className="card-title">{props.title}</h5>
-            </div>
+            <img src={src} className="card-img"/>
         </div>
     );
 }
