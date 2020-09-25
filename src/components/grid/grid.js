@@ -8,13 +8,16 @@ function turnCard(e) {
 }
 
 function Grid(props) {
-    const imgBackSrc = "https://cdn.pixabay.com/photo/2017/06/10/07/15/joystick-2389216_960_720.png";
-    const imgFrontSrc = "https://cdn.pixabay.com/photo/2018/10/05/21/21/spider-3726881_960_720.png";
+    const listCards = props.cards.map((card) => {
+        return <Card 
+        isToggleOn={card.isToggleOn} 
+        imgFrontSrc={card.imgFrontSrc} 
+        imgBackSrc={card.imgBackSrc} 
+        onClick={turnCard}
+        key={card.id}/>
+    });
     return (
-        <div className="memory-grid">
-            <Card isToggleOn={true} imgFrontSrc={imgFrontSrc} imgBackSrc={imgBackSrc} onClick={turnCard}/>
-            <Card isToggleOn={false} imgFrontSrc={imgFrontSrc} imgBackSrc={imgBackSrc} onClick={turnCard}/>
-        </div>
+        <div className="memory-grid">{listCards}</div>
     );
 }
 
