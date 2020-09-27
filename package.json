@@ -19,7 +19,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^8.3.0"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
