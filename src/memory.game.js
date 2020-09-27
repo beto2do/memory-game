@@ -23,7 +23,7 @@ function getImages() {
 function createCard(imgUrl) {
     const imgBackSrc = "https://cdn.pixabay.com/photo/2017/06/10/07/15/joystick-2389216_960_720.png";
     return {
-        id: uuidv4(),
+        cardId: uuidv4(),
         isToggleOn: true,
         imgFrontSrc:  imgUrl,
         imgBackSrc: imgBackSrc

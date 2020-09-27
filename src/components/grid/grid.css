@@ -1,4 +1,6 @@
 .memory-grid {
     position: relative;
     display: flex;
+    width: 60rem;
+    flex-wrap: wrap;
 }
