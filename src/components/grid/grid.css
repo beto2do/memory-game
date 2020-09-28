@@ -3,4 +3,5 @@
     display: flex;
     width: 60rem;
     flex-wrap: wrap;
+    perspective: 1000px;
 }

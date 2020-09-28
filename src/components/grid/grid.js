@@ -17,7 +17,6 @@ function Grid(props) {
     let duplicatedCards = cardsClone.concat(cardsClone).sort();
     const listCards = duplicatedCards.map((card) => {
         return <Card 
-        isToggleOn={card.isToggleOn} 
         imgFrontSrc={card.imgFrontSrc} 
         imgBackSrc={card.imgBackSrc} 
         onClick={turnCard}
