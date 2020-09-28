@@ -3,11 +3,6 @@ import './grid.css';
 import Card from '../card';
 import { v4 as uuidv4 } from 'uuid';
 
-function turnCard(e) {
-    e.preventDefault();
-    console.log('turn card');
-}
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
@@ -19,7 +14,6 @@ function Grid(props) {
         return <Card 
         imgFrontSrc={card.imgFrontSrc} 
         imgBackSrc={card.imgBackSrc} 
-        onClick={turnCard}
         order={getRandomInt(duplicatedCards.length)}
         key={uuidv4()}/>
     });
